@@ -9,7 +9,7 @@ run;
 
 * problem 1; 
 
-proc lifetest data = hw3 method = km plots = survival; 
+proc lifetest data = hw3 method = km plots = survival(cl); 
 	title "Applied Regression II homework 3, problem 1";
 	strata treatment; 
 	time follow_time * infect(0); 
