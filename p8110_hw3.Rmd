@@ -1,7 +1,5 @@
 ---
 title: 'P8110: Homework 3'
-author: "Nick Williams"
-date: "September 21, 2018"
 output: pdf_document
 ---
 
@@ -9,7 +7,16 @@ output: pdf_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
+\begin{center}
+\textbf{Nick Williams \\
+ntw2117}
+\end{center}
+
 ## Problem 1
+
+\vspace{8cm}
+
+Based on the survival graph, it appears participants enrolled in the body-cleansing treatment are experiencing greater survival time compared to those enrolled in the routine cleansing treatment. For example, the survival function for those in the body-cleanising treatment never reaches 50% failure rate by the end of the study while the survival function for those in the routine cleansing treatment does.
 
 ## Problem 2
 
