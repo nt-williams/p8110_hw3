@@ -20,4 +20,40 @@ Based on the survival graph, it appears participants enrolled in the body-cleans
 
 ## Problem 2
 
+\vspace{5cm}
+
+#### log-rank test
+
+1. $H_0: S_1(t) = S_0(t), \text{ for all } t \leq \tau$  
+   $H_A: S_1(t) \neq S_0(t), \text { for all } t \leq \tau$
+   \newpage
+2. $$Q = 3.7924 \sim X^2_1$$
+   $$p = P(\chi^2_1 \leq 3.7924) = 0.0515$$
+3. $$0.0515 > 0.05 \rightarrow \text{ fail to reject the null}$$
+4. At the 5% level of significance, using a log-rank test, there is insufficient evidence to conclude that differential surivival itme exists between participants enrolled in the body-cleansing treatment and those enrolled in the routine cleansing treatment
+
+#### Wilcoxon test
+
+1. $H_0: S_1(t) = S_0(t), \text{ for all } t \leq \tau$  
+   $H_A: S_1(t) \neq S_0(t), \text { for all } t \leq \tau$  
+2. $$Q = 2.8639 \sim \chi^2_1$$
+   $$p = P(\chi^2_1 \leq 2.8639) = 0.0906$$  
+3. $$0.0906 > 0.05 \rightarrow \text{ fail to reject the null}$$
+4. At the 5% level of significance, using a Wilcoxon rank test, there is insufficient evidence to conclude that differential survival time exists between participants enrolled in the body-cleansing treatment and those enrolled in the routine cleansing treatment. 
+
+#### Difference between tests
+
+The log-rank test is more sensitive to differences between survival functions at time points later in follow-up while the Wilcoxon test is more sensitive to differences earlier in time. This is because the Wilcoxon rank test applies a weight to each unique event time point according to the number of at risk individuals at that time point. This is why the p-value for the Wilcoxon test is larger in this case compared to the p-value from the log-rank test. 
+
+\newpage
+
 ## Problem 3
+
+\vspace{5cm}
+
+1. $H_0: S_1(t) = S_2(t) = S_3(t) = S_4(t) \text{ for all } t \leq \tau$  
+   $H_A: \text{ At least one } S_k \text{ is different for some } t \leq \tau$
+2. $$Q = 5.4722 \sim \chi^2_3$$
+   $$p = P(\chi^2_3 \leq 5.4722) = 0.1403$$
+3. $$0.1403 > 0.05 \rightarrow \text{ fail to reject the null}$$
+4. At the 5% level of significance, using the generalized log-rank test, there is insufficient evidence to conclude that the survival functions are different among the 4 different groups of surface area burned. 
