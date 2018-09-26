@@ -37,15 +37,13 @@ Based on the survival graph, it appears participants enrolled in the body-cleans
 1. $H_0: S_1(t) = S_0(t), \text{ for all } t \leq \tau$  
    $H_A: S_1(t) \neq S_0(t), \text { for all } t \leq \tau$  
 2. $$Q = 2.8639 \sim \chi^2_1$$
-   $$p = P(\chi^2_1 \leq 2.8639) = 0.0906$$  
+   $$p = P(\chi^2_1 \leq 2.8639) = 0.0906$$ 
 3. $$0.0906 > 0.05 \rightarrow \text{ fail to reject the null}$$
 4. At the 5% level of significance, using a Wilcoxon rank test, there is insufficient evidence to conclude that differential survival time exists between participants enrolled in the body-cleansing treatment and those enrolled in the routine cleansing treatment. 
 
 #### Difference between tests
 
 The log-rank test is more sensitive to differences between survival functions at time points later in follow-up while the Wilcoxon test is more sensitive to differences earlier in time. This is because the Wilcoxon rank test applies a weight to each unique event time point according to the number of at risk individuals at that time point. This is why the p-value for the Wilcoxon test is larger in this case compared to the p-value from the log-rank test. 
-
-\newpage
 
 ## Problem 3
 
